@@ -1,7 +1,7 @@
 package slice
 
 //go:noinline
-func genSlice(b []byte) {
+func setSlice(b []byte) {
 	b[0] = 0x10
 	b[1] = 0x11
 	b[2] = 0x12

@@ -4,10 +4,10 @@ import (
 	"testing"
 )
 
-func Benchmark_genSlice(b *testing.B) {
+func Benchmark_setSlice(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		dest := make([]byte, 3)
-		genSlice(dest)
+		setSlice(dest)
 		none(dest)
 	}
 }
